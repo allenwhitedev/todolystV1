@@ -1,0 +1,32 @@
+<template name='calendar'> {{setCurrPage}} {{setDate}} {{setEvents}}
+
+<header class='calendarHeader'>
+<!-- 	<h6 class="dayOfWeek">{{showDate 'weekday'}}</h6> -->
+	<h4 class="month">{{showDate 'month'}}</h4>
+	<h1 class="date">{{showDate 'date'}}</h1>
+	<h5 class="year blendText">{{showDate 'year'}}</h5>
+</header>
+
+<ul class='calendarBody'>
+
+	<li class="weekday">S</li> <li class="weekday">M</li> 
+	<li class="weekday">T</li> 	<li class="weekday">W</li>
+	<li class="weekday">T</li> 	<li class="weekday">F</li> 	<li class="weekday">S</li>
+
+{{#each calDay}}
+	<li class='calDay waves-effect waves-light waves-circle' id="{{this}}">
+		{{this}} 
+		<div class='calDot' style='width: {{numEvents this}}0%;'>
+		</div>		
+	</li>
+{{/each}}
+
+</ul>
+
+{{> fabForCalendar}}
+
+<style type="text/css">
+.nav-wrapper {background: #1f897f;}
+nav .brand-logo {font-size: 1.6rem; font-weight: 300;}
+</style>
+</template>

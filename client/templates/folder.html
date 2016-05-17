@@ -1,0 +1,22 @@
+<template name='folder'> {{setCurrPage}}
+	
+	<ul class="collection">
+	{{#each folder}}
+		<a class='collection-item' href="/{{_id}}">
+			<i class="ion-folder small yellow-text text-lighten-2 "></i> &nbsp; 
+			<span class='grey-text text-darken-3'>{{name}}</span>
+		</a>
+	{{/each}}
+
+	{{#each list}}
+	<a class='collection-item' href='/{{_id}}'>
+		<i class="ion-document-text small blue-text text-darken-2"></i>
+		&nbsp;
+		<span class='grey-text text-darken-3'>{{name}}</span>
+	</a>
+	{{/each}}
+	</ul>
+
+	{{> fabForFolder}}
+	
+</template>

@@ -1,0 +1,51 @@
+.padLeft5P {padding-left: 5px;} .padRight5P {padding-right: 5px;}
+.flexCenter {display: flex; justicy-content: center; align-items: center;}
+.blendText {color: rgba(255, 255, 255, .4)}
+.collection-item > * {vertical-align: middle;}
+.selectedTask {background: #eeecef!important; font-size: 1.1rem;}
+.test {color: red; background: yellow;}
+.fullWidth {width: 100% !important;}
+.absoluteToHide {position: absolute;}
+/* vertical aligns back button on mobile screens */
+ @media screen and (max-width: 600px) { .navbarItem {height: 56px;} }
+ body {padding-bottom: 90px;}
+ .fabFooter 
+ {
+ 	 position: fixed; bottom: 0; z-index: 100; 
+ 	 height: 90px; width: 100%; background: #fff;
+ }
+
+/* CALENDAR */
+.calendarHeader 
+{ 
+	background: #26a69a; color: #fff; text-align: center; padding: 5px; 
+}
+.calendarBody 
+{
+	display: flex; flex-direction: row; flex-wrap: wrap; 
+}
+.calDay, .weekday 
+{
+	display: flex; justify-content: center; align-items: center; flex-direction: column;
+	width: calc(100%/7);
+}
+.calDay 
+{ color: #595959; height: 14.2857142857vw;}
+.calDay:hover {cursor: hand; cursor: pointer;}
+.selectedDate {background: #ee6e73; border-radius: 50%; color: #fff;}
+.calDot 
+{
+	background: #ee6e73; border-radius: 20%; height: 5px; max-width: 75%;
+}
+
+.dayOfWeek 
+{
+	font-weight: 300; background: #1f897f; width: 100%; padding: 10px; 
+	color: rgba(255, 255, 255, .95)
+}
+.month {font-size: 2.1rem; margin: 15px auto auto 0; font-weight: 300;}
+.date {font-size: 4.5rem; margin: 5px;}
+.year {font-size: 1.8rem; margin-bottom: 10px; font-weight: 300; }
+.weekday {font-size: .9rem; color: #999; margin-bottom: 10px;}
+
+/* USER ACCOUNTS */

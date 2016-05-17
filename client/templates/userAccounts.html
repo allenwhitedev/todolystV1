@@ -1,0 +1,21 @@
+<template name='userAccounts'>
+
+
+{{#if currentUser}} {{importAnonData}}
+<div class="parallax-container">
+	<div class="parallax"><img src="https://pixabay.com/static/uploads/photo/2015/10/01/21/39/background-image-967820_960_720.jpg"><!-- <img class='' src="jellyfish.jpg" --></div>
+</div>
+
+
+<div class="container">
+	<h4 class="">Profile/settings/statistics page (parallax picture top)</h4>
+</div>
+	{{> atNavButton}}
+{{else}}
+	{{> atForm}}
+{{/if}}
+
+
+</template>
+
+

@@ -1,0 +1,27 @@
+<!-- NAVBAR -->
+<template name='navbar'>
+<nav>
+	<div class="nav-wrapper">
+		{{#if parent}}
+		<a href="{{parent}}" class="backButton padLeft5P left navbarItem valign-wrapper"><i class="ion-android-arrow-back large padLeft5P"></i></a>
+		{{/if}}
+		<a class="brand-logo padLeft5P">{{currPage}}</a>
+		<a class="button-collapse right padRight5P" data-activates='mobile-demo'> 
+			<i class="ion-navicon small padRight5P"></i> 
+		</a>
+		<ul class="right hide-on-med-and-down">
+			<li> <a class='closeSideNav' href=""> Login or Signup </a> </li>
+			<li> <a class='closeSideNav' href=""> Learn </a> </li>
+			<li> <a class='closeSideNav' href=""> Other </a> </li>
+		</ul>
+		<ul class="side-nav" id='mobile-demo'>
+			<li> <a class='closeSideNav' href="userAccounts"> Login or Signup </a> </li>
+			<li> <a class='closeSideNav' href=""> Learn </a> </li>
+			<li> <a class='closeSideNav' href=""> Other </a> </li>
+		</ul>
+	</div>
+</nav>
+<script type="text/javascript">
+	$(document).ready(function(){ $(".button-collapse").sideNav() }) 
+</script>
+</template>

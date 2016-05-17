@@ -1,0 +1,41 @@
+<!-- FOLDER FAB ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+<template name='fabForFolder'>
+<footer class='fabFooter'>
+
+<!-- BUTTON -->
+<div class="fixed-action-btn" style="bottom: 24px; right: 24px;">
+  
+  <a class="btn-floating btn-large red" >
+    <i class="large {{getAction 'primaryAction'}}" id='primaryAction'></i>
+  </a>
+  
+  <ul>
+    <li><a class="btn-floating yellow darken-1" >
+    	<i class="{{getAction 'quaternaryAction'}}" id='quaternaryAction'> </i>
+    </a></li>
+
+    <li><a class="btn-floating green" >
+    	<i class="{{getAction 'tertiaryAction'}}" id='tertiaryAction'></i>
+    </a></li>
+    
+    <li><a class="btn-floating blue" >
+    	<i class="{{getAction 'secondaryAction'}}" id='secondaryAction'></i>
+    </a></li>
+  </ul>
+
+</div>
+
+<!-- TEXT LINE -->
+{{#if placeholder}}
+<div class='row' style='position: fixed; bottom: 0px; padding-left: 20px; width: 70%;'>
+	<div class="input-field">
+    <form class='fabForm'>
+  		<input value='' id="fabInputBar" type='text' name='fabText' class='validate padLeft'>
+  		<label class='' for='fabInputBar'>{{placeholder}}</label>
+  	</form>
+  </div>
+</div>
+{{/if}}
+
+</footer>
+</template>
