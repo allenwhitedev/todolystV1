@@ -18,13 +18,25 @@ es5-shim                # ECMAScript 5 compatibility for older browsers.
 ecmascript              # Enable ECMAScript2015+ syntax in app code
 
 materialize:materialize@=0.97.0
-iron:router
-accounts-password
+#iron:router
+#	accounts-password
 useraccounts:materialize
 accounts-ui
 ground:db
-insecure
+#insecure
 random
 mrt:jquery-ui-sortable
+#meteoric:ionicons-sass
+#session
+
+# added
+raix:push
+accounts-password
+mdg:geolocation
+iron:router
+
+fourseven:scss
+meteoric:ionic-sass
 meteoric:ionicons-sass
+meteoric:ionic
 session
