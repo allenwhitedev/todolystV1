@@ -147,6 +147,8 @@ Template.home.helpers
 ({
 	'rootFolder': function()
 	{
+		if(Session.get('setRootFolder'))
+			Session.delete('setRootFolder')
 		rootFolder = Folders.findOne({root: true})
 		console.log(rootFolder)
 		if (rootFolder)

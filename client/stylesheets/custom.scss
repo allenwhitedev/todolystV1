@@ -8,10 +8,10 @@
 .absoluteToHide {position: absolute;}
 /* vertical aligns back button on mobile screens */
  @media screen and (max-width: 600px) { .navbarItem {height: 56px;} }
- body {padding-bottom: 90px; background: #ebebeb;}
+ body {padding-bottom: 90px;}
  .fabFooter 
  {
- 	 position: fixed; bottom: 0; z-index: 100; 
+ 	 position: absolute; bottom: 0; z-index: 100; 
  	 height: 90px; width: 100%; background: #fff;
  }
 
@@ -47,5 +47,13 @@
 .date {font-size: 4.5rem; margin: 5px;}
 .year {font-size: 1.8rem; margin-bottom: 10px; font-weight: 300; }
 .weekday {font-size: .9rem; color: #999; margin-bottom: 10px;}
+
+/* LIST */
+.listItem 
+{
+	min-height: 40px; display: flex; align-items: center; padding: 10px; 
+	border-bottom: 1px solid #ebebeb;
+}
+.dot {background: #ee6e73; border-radius: 50%; height: 5px; width: 5px; margin: 10px;}
 
 /* USER ACCOUNTS */
