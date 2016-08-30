@@ -1,5 +1,11 @@
+/* GLOBAL STYLES */
+.absoluteBottom {position: absolute; bottom: 0;}
+.appColorBackground {background-color: #ee6e73}
+.appColorText {color: #ee6e73;}
+.marginAuto {margin: auto;}
+.margin5px {margin: 5px;}
 .padLeft5P {padding-left: 5px;} .padRight5P {padding-right: 5px;}
-.flexCenter {display: flex; justicy-content: center; align-items: center;}
+.flexCenter {display: flex; justify-content: center; align-items: center;}
 .blendText {color: rgba(255, 255, 255, .4)}
 .collection-item > * {vertical-align: middle;}
 .selectedTask {background: #eeecef!important; font-size: 1.1rem;}
@@ -8,7 +14,7 @@
 .absoluteToHide {position: absolute;}
 /* vertical aligns back button on mobile screens */
  @media screen and (max-width: 600px) { .navbarItem {height: 56px;} }
- body {padding-bottom: 90px; background: #ebebeb;}
+ body {padding-bottom: 90px; }
  .fabFooter 
  {
  	 position: fixed; bottom: 0; z-index: 100; 
@@ -49,3 +55,21 @@
 .weekday {font-size: .9rem; color: #999; margin-bottom: 10px;}
 
 /* USER ACCOUNTS */
+
+/* TEST */
+.testIconContainer 
+{
+	display: flex; width: 140px; margin: auto; flex-wrap: wrap; 
+}
+.testIcon 
+{
+	height: 100px; width: 100px; border-radius: 50%; margin: 5px auto;
+	background-color: #ee6e73; display: flex; justify-content: center;
+	align-items: center;	 
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+.testIconText 
+{
+	font-size: 80px; margin: 0;
+	text-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}

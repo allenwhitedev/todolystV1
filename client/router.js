@@ -10,6 +10,7 @@ Router.map(function()
 	this.route('fabForCalendar')
 	this.route('root')
 	this.route('calendar')
+	this.route('test')
 })
 
 Router.route(':_id', function()
