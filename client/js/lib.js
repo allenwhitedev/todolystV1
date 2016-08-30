@@ -24,6 +24,7 @@ Meteor.startup(function()
 		var anonUserId = Random.id()
 		localStorage.setItem('anonUserId', anonUserId)
 		Folders.insert({name: 'rootFolder', root: true, createdBy: anonUserId})
+    Session.set('setRootFolder', true)
 	}
 })
 

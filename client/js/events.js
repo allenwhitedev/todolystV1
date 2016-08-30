@@ -130,6 +130,12 @@ Template.fabForCalendar.events
 
 Template.list.events
 ({
+	'click li'(event)
+	{ 
+		let fab = $('.fixed-action-btn')
+		if(fab.hasClass('active'))
+			fab.closeFAB() 
+	},
 	'click .collection-item': function(event)
 	{
 		var primaryAction = Session.get('primaryActionL')
@@ -157,6 +163,14 @@ Template.list.events
 					Meteor.setTimeout(function(){ $('.datepicker').focus() }, 200)
 			}
 		}
+	},
+	'click .fixed-action-btn'(event)
+	{
+		let fab = $('.fixed-action-btn')
+		if (fab.hasClass('active'))
+			fab.closeFAB()
+		else
+			fab.openFAB(); 
 	},
 	'sortupdate .sortable': function(event, ui)
 	{

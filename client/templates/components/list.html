@@ -4,7 +4,8 @@
 {{#if isPrimaryAction "ion-android-done"}} {{> dismissableRenderedHook}}
 <ul class="collection dismissableCollection">
   {{#each task}}
-    <li class="collection-item dismissable">
+    <li class="collection-item dismissable listItem">
+      <section class="dot"></section>
       <div id='{{_id}}'>{{name}}</div>
     </li>
   {{/each}}
@@ -15,7 +16,10 @@
 {{else}} {{#if isPrimaryAction "ion-arrow-move"}} {{> sortableRenderedHook}}
 <ul class="collection sortable selector">
 {{#each task}}
-  <li class='collection-item' data-id='{{_id}}' id='sort_{{order}}'>{{name}}</li>
+  <li class='collection-item listItem' data-id='{{_id}}' id='sort_{{order}}'>
+    <section class="dot"></section>
+    {{name}}
+  </li>
 {{/each}}
 </ul>  
 
@@ -24,7 +28,10 @@
 {{else}}
   <ul class="collection">
     {{#each task}}
-      <li class="collection-item waves-effect fullWidth" id="{{_id}}">{{name}} </li>
+      <li class="listItem waves-effect fullWidth avatar" id="{{_id}}">
+      <section class="dot"></section> 
+      {{name}} 
+      </li>
     {{/each}}
   </ul> 
   
