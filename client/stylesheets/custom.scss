@@ -14,11 +14,7 @@
 .absoluteToHide {position: absolute;}
 /* vertical aligns back button on mobile screens */
  @media screen and (max-width: 600px) { .navbarItem {height: 56px;} }
-<<<<<<< HEAD
- body {padding-bottom: 90px; }
-=======
  body {padding-bottom: 90px;}
->>>>>>> d2b2bcc6172aaf07fb726cf82910d7e483447df3
  .fabFooter 
  {
  	 position: absolute; bottom: 0; z-index: 100; 
