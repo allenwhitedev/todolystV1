@@ -11,6 +11,7 @@ Router.map(function()
 	this.route('root')
 	this.route('calendar')
 	this.route('test')
+	this.route('testTutorial1')
 })
 
 Router.route(':_id', function()
