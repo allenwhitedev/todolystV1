@@ -4,6 +4,9 @@
 .appColorText {color: #ee6e73;}
 .marginAuto {margin: auto;}
 .margin5px {margin: 5px;}
+.margin0 {margin: 0;}
+.padding5px {padding: 5px;}
+.paddingHorizontal15px {padding-left: 15px; padding-right: 15px;}
 .padLeft5P {padding-left: 5px;} .padRight5P {padding-right: 5px;}
 .flexCenter {display: flex; justify-content: center; align-items: center;}
 .blendText {color: rgba(255, 255, 255, .4)}
@@ -20,6 +23,7 @@
  	 position: absolute; bottom: 0; z-index: 100; 
  	 height: 90px; width: 100%; background: #fff;
  }
+.h6 {font-size: 1.25rem;}
 
 /* CALENDAR */
 .calendarHeader 
@@ -82,3 +86,29 @@
 	text-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 .beginButton {background-color: #ee6e73 !important;}
+/* TEST TUTORIAL */
+.navBar 
+{
+	display: flex; align-items: center; text-align: center; justify-content: space-between; box-shadow: none !important;
+}
+.subNavbar 
+{
+	display: flex; justify-content: space-around; align-items: center;
+	box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.16);
+}
+.navbarDate {font-size: 1rem;}
+
+/* TRANSPARENT OVERLAY DEMO */
+.mediumIconDemo 
+{
+	position: absolute; z-inddex: 100;
+	height: 45px; width: 45px; 
+	border-radius: 50%; opacity: .75;	
+}
+.caratHighlightLeft 
+{ 
+	top: 5px; left: 2px; 
+	box-shadow: 0 0 0 99999px rgba(0, 0, 0, .8);
+}
+.caratHighlightRight { top: 5px; right: 2px; }
+/* body { background: #757575; opacity: .5; } */

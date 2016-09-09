@@ -1,13 +1,34 @@
 <template name='testTutorial1'>
 	
-	<header class="appColorBackground">
-		<nav>
-			<h5 class="align-center">
-				<i class="keyboard-arrow-left"></i> 
-				Today 
-				<i class="keyboard-arrow-right"></i>
-			</h5>
-		</nav>
-	</header>
+<!-- HEADER/NAV  -->
+<header class="">
+	<nav class='navBar paddingHorizontal15px'>
+		<i class="ion-chevron-left small"></i>
+
+		<h5 class="margin0 align-center">
+			Today <span class="navbarDate"></span>
+		</h5>
+		<i class="ion-chevron-right small"></i>
+	</nav>
+
+	<nav class="subNavbar">
+		<h6 class="margin0 h6">
+			<a href="/calendar">			
+				<i class="ion-calendar"></i>
+				&nbsp; Sep 7 2016
+			</a>
+			<span class="numEventsNav">
+				&nbsp; 0 events 
+			</span>
+		</h6>
+	</nav>
+</header>
+
+<div class="blurBackground"></div>
+
+<section class="mediumIconDemo caratHighlightLeft"></section>
+<section class="mediumIconDemo caratHighlightRight"></section>
+
+
 
 </template>
