@@ -30,9 +30,9 @@ Meteor.startup(function()
 
 // ---------------------------- RENDERED SCRIPT INITIALIZATIONS ----------------------
 
-// ALSO HANDLES COMPLETE/DISMISS CALBACKS
+// complete/dismiss jquery/materialize init, also handles c/d event callbacks
 Template.dismissableRenderedHook.rendered = function()
-{ // from materialize.js and enables dismissable collections
+{ // from materialize.js, enables dismissable collections
 	  swipeLeft = false; swipeRight = false; 
 
   $('.dismissable').each(function() {
